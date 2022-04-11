@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Alegreya', sans-serif;
+    background-image: linear-gradient(90deg, #2f80c2, #2bc771);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.search{
+    position: relative;
+    height: 50px;
+}
+.search .input{
+    font-family: 'Alegreya';
+    background-color: #fff;
+    border: 0;
+    font-size: 16px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+.btn{
+    background-color: #fff;
+    color: rgb(218, 31, 31);
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+.input:focus,
+.btn:focus{
+    outline: none;
+}
+.search.active .input{
+    width: 200px;
+}
+.search.active .btn{
+    transform: translate(198px);
+}
+
+
+
+
+
